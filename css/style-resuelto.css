@@ -1,0 +1,91 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+/* video fullscreen */
+.container-fullscreen {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container-fullscreen .title{
+    position: absolute;
+    bottom: 0;
+    width: 475px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.container-fullscreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.container-fullscreen h1 {
+   position: absolute;
+   text-align: center; 
+   font-family: suecaslabbold;
+   color: black;
+   font-size: 40px;
+   background: yellow;
+   padding: 20px 20px 70px 20px;
+   z-index: 2;
+
+}
+
+.cajaboton {
+    position:absolute;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    bottom: 0;
+    z-index: 1000;
+
+}
+.botones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.botones > * {
+    background-color:none;
+    color: black;
+    padding: 10px;
+    border-style: solid;
+    border-width: thin;
+    font-family: suecaslabbold;
+    font-size: 13px;
+    align-content: center;
+
+}
+
+/* caja de la nota  */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-16-9 {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.container-16-9 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
